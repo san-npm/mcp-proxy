@@ -2,6 +2,8 @@
   "rewrites": [
     { "source": "/api/:path*", "destination": "/api/proxy" },
     { "source": "/mcp/:path*", "destination": "/api/proxy" },
-    { "source": "/health", "destination": "/api/proxy" }
+    { "source": "/health", "destination": "/api/proxy" },
+    { "source": "/billing/:path*", "destination": "/api/proxy" },
+    { "source": "/admin/:path*", "destination": "/api/proxy" }
   ]
 }
