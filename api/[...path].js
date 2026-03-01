@@ -21,6 +21,11 @@ export default async function handler(req) {
 
   const respHeaders = new Headers(resp.headers);
   respHeaders.set('Access-Control-Allow-Origin', '*');
+    // Prevent Vercel from caching HTML responses
+    const ct = resp.headers.get('content-type') || '';
+    if (ct.includes('text/html')) {
+      respHeaders.set('Cache-Control', 'no-cache, no-store, must-revalidate');
+    }
   respHeaders.set('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
   respHeaders.set('Access-Control-Allow-Headers', 'Content-Type');
 
