@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/mcp/:path*", "destination": "/api/proxy" },
+    { "source": "/:path*", "destination": "/api/proxy" }
+  ]
+}
