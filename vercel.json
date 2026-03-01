@@ -1,9 +1,44 @@
 {
   "rewrites": [
-    { "source": "/api/:path*", "destination": "/api/proxy" },
-    { "source": "/mcp/:path*", "destination": "/api/proxy" },
-    { "source": "/health", "destination": "/api/proxy" },
-    { "source": "/billing/:path*", "destination": "/api/proxy" },
-    { "source": "/admin/:path*", "destination": "/api/proxy" }
+    {
+      "source": "/",
+      "destination": "/api/proxy"
+    },
+    {
+      "source": "/api/:path*",
+      "destination": "/api/proxy"
+    },
+    {
+      "source": "/mcp/:path*",
+      "destination": "/api/proxy"
+    },
+    {
+      "source": "/health",
+      "destination": "/api/proxy"
+    },
+    {
+      "source": "/billing/:path*",
+      "destination": "/api/proxy"
+    },
+    {
+      "source": "/admin/:path*",
+      "destination": "/api/proxy"
+    },
+    {
+      "source": "/robots.txt",
+      "destination": "/api/proxy"
+    },
+    {
+      "source": "/sitemap.xml",
+      "destination": "/api/proxy"
+    },
+    {
+      "source": "/llms.txt",
+      "destination": "/api/proxy"
+    },
+    {
+      "source": "/llms-full.txt",
+      "destination": "/api/proxy"
+    }
   ]
 }
