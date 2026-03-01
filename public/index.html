@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MCP Services — SKILLS.ws</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;background:#0a0a0a;color:#e5e5e5;min-height:100vh;display:flex;align-items:center;justify-content:center}
+.c{max-width:640px;padding:2rem}
+h1{font-size:1.5rem;margin-bottom:.5rem;color:#fff}
+p{color:#888;margin-bottom:1.5rem}
+.endpoints{list-style:none}
+.endpoints li{padding:.4rem 0;font-family:monospace;font-size:.9rem}
+.endpoints a{color:#60a5fa;text-decoration:none}
+.endpoints a:hover{text-decoration:underline}
+.label{color:#888;display:inline-block;min-width:100px}
+footer{margin-top:2rem;color:#555;font-size:.8rem}
+footer a{color:#555}
+</style>
+</head>
+<body>
+<div class="c">
+<h1>MCP Services</h1>
+<p>Multi-tool MCP server for AI agents. 10 tools across screenshots, domain intelligence, and multi-chain blockchain data.</p>
+<ul class="endpoints">
+<li><span class="label">Health</span> <a href="/health">/health</a></li>
+<li><span class="label">Screenshot</span> /api/screenshot?url=&lt;url&gt;</li>
+<li><span class="label">PDF</span> /api/pdf?url=&lt;url&gt;</li>
+<li><span class="label">HTML to MD</span> /api/html2md?url=&lt;url&gt;</li>
+<li><span class="label">OCR</span> /api/ocr?url=&lt;image_url&gt;</li>
+<li><span class="label">WHOIS</span> <a href="/api/whois?domain=skills.ws">/api/whois?domain=skills.ws</a></li>
+<li><span class="label">DNS</span> <a href="/api/dns?domain=skills.ws">/api/dns?domain=skills.ws</a></li>
+<li><span class="label">SSL</span> <a href="/api/ssl?domain=skills.ws">/api/ssl?domain=skills.ws</a></li>
+<li><span class="label">Balance</span> /api/chain/balance?address=&amp;chain=ethereum</li>
+<li><span class="label">ERC20</span> /api/chain/erc20?address=&amp;token=&amp;chain=ethereum</li>
+<li><span class="label">TX</span> /api/chain/tx?hash=&amp;chain=ethereum</li>
+<li><span class="label">MCP SSE</span> /mcp/sse</li>
+</ul>
+<footer><a href="https://github.com/san-npm/mcp-services">GitHub</a> · <a href="https://skills.ws">SKILLS.ws</a></footer>
+</div>
+</body>
+</html>
