@@ -1,4 +1,4 @@
-const UPSTREAM = process.env.MCP_UPSTREAM || 'https://released-arise-bronze-commonwealth.trycloudflare.com';
+const UPSTREAM = process.env.MCP_UPSTREAM || 'https://estimates-hydrocodone-specialists-corrected.trycloudflare.com';
 
 export const config = { runtime: 'edge' };
 
