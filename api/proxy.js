@@ -1,4 +1,4 @@
-const UPSTREAM = process.env.MCP_UPSTREAM || 'https://estimates-hydrocodone-specialists-corrected.trycloudflare.com';
+const UPSTREAM = process.env.MCP_UPSTREAM || 'https://mcp-api.3615crypto.com';
 
 export const config = { runtime: 'edge' };
 
