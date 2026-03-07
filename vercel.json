@@ -21,6 +21,10 @@
       "destination": "/api/proxy"
     },
     {
+      "source": "/.well-known/:path*",
+      "destination": "/api/proxy"
+    },
+    {
       "source": "/robots.txt",
       "destination": "/api/proxy"
     },
