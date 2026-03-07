@@ -25,6 +25,10 @@
       "destination": "/api/proxy"
     },
     {
+      "source": "/oauth/:path*",
+      "destination": "/api/proxy"
+    },
+    {
       "source": "/robots.txt",
       "destination": "/api/proxy"
     },
